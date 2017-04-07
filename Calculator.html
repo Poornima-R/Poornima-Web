@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+	<script language="javascript" src= "CalScript.js"> </script>
+</head>
+<body>
+    <div class="box">
+		<div class="display">
+		   <input type="text" readonly size="18" maxlength=16 id="disp">
+	    </div>
+	    <div class="keys">
+		  <p>
+			<input type="button" class="button-black" value="mrc" onclick='mem_rcall()'>
+			<input type="button" class="button-black" value="m+" onclick='mem_plus()'>
+			<input type="button" class="button-black" value="m-" onclick='mem_minus()'>
+			<input type="button" class="button-pink" value="/" onclick='disp_val("/")'>
+		  </p>
+		  <p>
+		    <input type="button" class="button-gray" value="7" onclick='disp_val("7")'>
+			<input type="button" class="button-gray" value="8" onclick='disp_val("8")'>
+			<input type="button" class="button-gray" value="9" onclick='disp_val("9")'>
+			<input type="button" class="button-pink" value="*" onclick='disp_val("*")'>
+		  </p>
+		  <p>
+		    <input type="button" class="button-gray" value="4" onclick='disp_val("4")'>
+			<input type="button" class="button-gray" value="5" onclick='disp_val("5")'>
+			<input type="button" class="button-gray" value="6" onclick='disp_val("6")'>
+			<input type="button" class="button-pink" value="-" onclick='disp_val("-")'>
+		  </p>
+		  <p>
+		    <input type="button" class="button-gray" value="1" onclick='disp_val("1")'>
+			<input type="button" class="button-gray" value="2" onclick='disp_val("2")'>
+			<input type="button" class="button-gray" value="3" onclick='disp_val("3")'>
+			<input type="button" class="button-pink" value="+" onclick='disp_val("+")'>
+		  </p>
+		  <p>
+		    <input type="button" class="button-gray" value="0" onclick='disp_val("0")'>
+			<input type="button" class="button-gray" value="." onclick='disp_val(".")'>
+			<input type="button" class="button-gray" value="C" onclick='clr_disp("")'>
+			<input type="button" class="button-blue" value="=" onclick='eval_num("=")'>
+		  </p>
+	    </div>
+	</div>
+
+</body>
+</HTML> 
